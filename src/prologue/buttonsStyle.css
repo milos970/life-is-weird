@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 28, 2021, 5:12:58 PM
+    Author     : Milos
+*/
+.button {
+    
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 28px;
+    -fx-text-fill: orange;
+    -fx-wrap-text: true;
+}
+
+.button:hover {
+    -fx-underline: true;
+}
+
+
+

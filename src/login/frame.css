@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+#leftPane, #rightPane, #timerPane, #gamePane, #pane
+{
+    -fx-background-color: rgba(255,255,255,0.5); -fx-background-radius: 10;
+}
+
+#upPane
+{
+    -fx-background-color: rgba(235,235,235,0.7); -fx-background-radius: 10 10 0 0;
+}
+
+
+#timerPane
+{
+    -fx-background-color: rgba(245,245,245,0.6); -fx-background-radius: 10;
+}

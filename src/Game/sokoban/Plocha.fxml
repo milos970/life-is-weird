@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" maxHeight="525.0" maxWidth="542.0" minHeight="525.0" minWidth="542.0" prefHeight="525.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8.0.321" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.sokoban.PlochaController">
+   <children>
+      <ImageView fx:id="im" fitHeight="525.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pictures/g.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

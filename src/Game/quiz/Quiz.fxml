@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="525.0" maxWidth="542.0" minHeight="525.0" minWidth="542.0" prefHeight="525.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game.quiz.QuizController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="525.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="aButton" layoutX="39.0" layoutY="256.0" mnemonicParsing="false" onAction="#buttonA" prefHeight="25.0" prefWidth="483.0" style="-fx-background-radius: 50; -fx-background-color: transparent;">
+         <font>
+            <Font name="System Bold" size="2.0" />
+         </font>
+      </Button>
+      <Button fx:id="bButton" layoutX="39.0" layoutY="318.0" mnemonicParsing="false" onAction="#buttonB" prefHeight="25.0" prefWidth="483.0" style="-fx-background-radius: 50; -fx-background-color: transparent;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="cButton" layoutX="39.0" layoutY="381.0" mnemonicParsing="false" onAction="#buttonC" prefHeight="25.0" prefWidth="483.0" style="-fx-background-radius: 50; -fx-background-color: transparent;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dButton" layoutX="39.0" layoutY="440.0" mnemonicParsing="false" onAction="#buttonD" prefHeight="25.0" prefWidth="483.0" style="-fx-background-radius: 50; -fx-background-color: transparent;">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Text fx:id="questionText" layoutX="137.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="308.13671875" />
+   </children>
+</Pane>
