@@ -129,34 +129,15 @@ this.leftButton.setEffect(new DropShadow());
         
         
          
-        new Timeline(new KeyFrame(
-        Duration.millis(2000),
-        ae -> {
-            try {
-            this.sp = new SongPlayer();
-            this.sp.chooseSong(9);
-        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-            Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-            
-            
-    } ))
-        .play();
+
         
-        
+
         Manager.getInstation(anchorPane, this);
-        this.disableAll();
-        
-        new Timeline(new KeyFrame(
-        Duration.millis(30000),
-        ae -> {
-            this.enablePexeso();
-            Timer.getInstantion(9, 59, digits).run();
-            
-            
-    } ))
-        .play();
-        
+
+
+        //this.disableAll();
+        this.enablePexeso();
+        Timer.getInstantion(9, 59, digits).run();
         this.againButton.setVisible(false);
     } 
     
@@ -316,23 +297,9 @@ this.leftButton.setEffect(new DropShadow());
         Timer.getInstantion(0, 0, null).stop();
         
         if (Timer.getInstantion(0, 0, null).getMinutes() == 0 && Timer.getInstantion(0, 0, null).getSeconds() == 0) {
-            try {
-                this.sp.chooseSong(11);
-                
-            } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-                Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+
         } else {
-            try {
-                this.sp.chooseSong(12);
-                this.digits.setText("NICE");
-                
-                this.textField.setText("Po skončení hry mi ho napíš na mess.");
-                this.textField.setStyle("-fx-text-fill: black; -fx-font-size: 16px;");
-                this.textField.setVisible(true);
-            } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-                Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);
-            }
+
         }
         
         new Timeline(new KeyFrame(

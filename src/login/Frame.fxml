@@ -14,9 +14,7 @@
 <AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FrameController">
    <children>
       <ImageView fx:id="background" fitHeight="660.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../pictures/background.jpg" />
-         </image></ImageView>
+         </ImageView>
       <Pane fx:id="pane" layoutX="40.0" layoutY="35.0" maxHeight="590.0" maxWidth="1120.0" minHeight="590.0" minWidth="1120.0" prefHeight="590.0" prefWidth="1120.0" stylesheets="@frame.css">
          <children>
             <BorderPane prefHeight="590.0" prefWidth="1120.0">

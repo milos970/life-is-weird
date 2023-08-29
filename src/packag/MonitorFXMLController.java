@@ -109,7 +109,7 @@ public class MonitorFXMLController implements Initializable {
         this.displayImageView.setEffect(blur);
         
         this.prompt.setOpacity(50);
-        this.prompt.setText("Your GPU");
+        this.prompt.setText("Pin: 1650");
         this.prompt.setFill(Color.WHITE);
         
         this.setCirclesTransparent();
@@ -130,7 +130,7 @@ public class MonitorFXMLController implements Initializable {
         
         FrameController fc = loader.<FrameController>getController();
         if (fc == null) {
-            System.out.println(54545);
+
         }
         
         

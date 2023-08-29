@@ -70,12 +70,7 @@ public class PlochaController extends Application implements Initializable  {
         }
         } else {
             if (which == 2) {
-                try {
-            this.ap = new AudioPlayer("easy");
-            this.ap.play();
-        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-            Logger.getLogger(PlochaController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
                 
                 new Timeline(new KeyFrame(
         Duration.millis(5000),

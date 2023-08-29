@@ -19,7 +19,6 @@ import javafx.scene.effect.GaussianBlur;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.Text;
 import javafx.util.Duration;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
@@ -36,8 +35,7 @@ public class QuizController  implements Initializable  {
    private ImageView imageView;
    @FXML
    private Button reproButton;
-   @FXML
-   private Text questionText;
+   private Repro repro;
    @FXML
    private Button aButton;
    @FXML
@@ -61,70 +59,86 @@ public class QuizController  implements Initializable  {
         this.imageView.setImage(new Image("file:images/book.jpg"));
         GaussianBlur blur = new GaussianBlur(10);   
         this.imageView.setEffect(blur);
-        
 
-       
+
+
+       try {
+           this.repro = new Repro();
+           this.reproButton.setGraphic(this.repro);
+       } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+           Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
+       }
+
         this.referee = new Referee(this,5);
        try {
            this.setAnswers();
        } catch (IOException ex) {
            Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
        }
-        
-       
-    }
 
+
+    }
+    
+    @FXML
+    public void playAudio() {
+
+    }
+    
+    private void nextAudio() {
+
+    }
     
     private void setAnswers() throws IOException {
         switch(this.round) {
             
             case 1:
-        this.questionText.setText("Low-level programming language");
-        this.aButton.setText("C#");
-        this.bButton.setText("Java");
-        this.cButton.setText("C");
-        this.dButton.setText("Python");
+        
+        this.aButton.setText("Wrong");
+        this.bButton.setText("Correct");
+        this.cButton.setText("Wrong");
+        this.dButton.setText("Wrong");
         this.round++;
-        this.which = 3;
+        this.which = 2;
         this.referee.next();
             break;
             case 2:
-        this.questionText.setText("Not considered as programming language");
-        this.aButton.setText("Python");
-        this.bButton.setText("JavaScript");
-        this.cButton.setText("Assembler");
-        this.dButton.setText("HTML");
+        this.aButton.setText("Correct");
+        this.bButton.setText("Wrong");
+        this.cButton.setText("Wrong");
+        this.dButton.setText("Wrong");
+        
+        this.nextAudio();
         this.round++;
         this.referee.next();
-        this.which = 4;
+        this.which = 1;
             break;
             case 3:
-        this.questionText.setText("");
-        this.aButton.setText("Sexy.");
-        this.bButton.setText("Tekvička.");
-        this.cButton.setText("Kvetinka.");
-        this.dButton.setText("Jigglypuff.");
-
+        
+        this.aButton.setText("Wrong");
+        this.bButton.setText("Correct");
+        this.cButton.setText("Wrong");
+        this.dButton.setText("Wrong");
+        this.nextAudio();
         this.round++;
         this.referee.next();
         this.which = 2;
             break;
             case 4:
-        this.aButton.setText("Jaseňová.");
-        this.bButton.setText("Limbová.");
-        this.cButton.setText("Smreková.");
-        this.dButton.setText("Jašeňová.");
+        this.aButton.setText("Wrong");
+        this.bButton.setText("Wrong");
+        this.cButton.setText("Correct");
+        this.dButton.setText("Wrong");
         this.which = 3;
-
+        this.nextAudio();
         this.round++;
         this.referee.next();
             break;
             case 5:
-        this.aButton.setText("2");
-        this.bButton.setText("1");
-        this.cButton.setText("3");
-        this.dButton.setText("4");
-
+        this.aButton.setText("Correct");
+        this.bButton.setText("Wrong");
+        this.cButton.setText("Wrong");
+        this.dButton.setText("Wrong");
+        this.nextAudio();
         this.referee.next();
         this.which = 1;
             break;
@@ -133,14 +147,14 @@ public class QuizController  implements Initializable  {
     }
     
     
-    private void h() throws IOException {
-        
+    private void initial() throws IOException {
+
         this.aButton.setStyle("-fx-background-color: transparent;");
         this.bButton.setStyle("-fx-background-color: transparent;");
         this.cButton.setStyle("-fx-background-color: transparent;");
         this.dButton.setStyle("-fx-background-color: transparent;");
         this.setAnswers();
-        
+
     }
     
     @FXML
@@ -153,7 +167,7 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -166,7 +180,7 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -174,7 +188,7 @@ public class QuizController  implements Initializable  {
     .play();
         }
         
-
+        this.repro.stopRecord();
     }
     
     @FXML
@@ -187,7 +201,7 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -200,14 +214,14 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }))
     .play();
         }
-
+        this.repro.stopRecord();
     }
     
     @FXML
@@ -219,7 +233,7 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -233,14 +247,14 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }))
     .play();
         }
-
+        this.repro.stopRecord();
     }
     
     @FXML
@@ -252,7 +266,7 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -263,16 +277,16 @@ public class QuizController  implements Initializable  {
         Duration.millis(2000),
         ae -> {
                 try {
-                    this.h();
+                    this.initial();
                 } catch (IOException ex) {
                     Logger.getLogger(QuizController.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }))
     .play();
             this.dButton.setStyle("-fx-background-color: red;");
-             this.referee.sub();
+            this.referee.sub();
         }
-
+        this.repro.stopRecord();
     }
     
     public void set() {

@@ -94,7 +94,7 @@ public class FrameController implements Initializable {
             
         AudioPlayer ap;
             try {
-                ap = new AudioPlayer("10");
+                ap = new AudioPlayer("6");
                         ap.play();
             } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
                 Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);

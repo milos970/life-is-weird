@@ -10,9 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="660.0" maxWidth="1200.0" prefHeight="660.0" prefWidth="1200.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prologue.Bar">
-    <stylesheets>
-        <URL value="@badoonotifying.css" />
-    </stylesheets>
+
    <children>
       <ImageView fx:id="imageView" fitHeight="660.0" fitWidth="1200.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
          <image>

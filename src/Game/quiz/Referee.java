@@ -26,6 +26,7 @@ public final class Referee {
         this.number--;
         if (this.number - 1 == -1) {
             this.qc.set();
+
             Manager.getInstation(null, null).finishQuiz();
         }
     }

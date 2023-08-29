@@ -65,8 +65,10 @@ public class MainMenuFXMLController implements Initializable
         this.mediaView.setPreserveRatio(false);
         this.mediaView.fitWidthProperty().bind(this.an.widthProperty());
         this.mediaView.fitHeightProperty().bind(this.an.heightProperty());
-        
+
+        this.mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         this.mediaPlayer.play();
+
         
         this.sequention(this.fadeOut(this.mediaView), this.fadeOut(this.button),3000).play();
         this.button.setDisable(true);
@@ -119,7 +121,7 @@ public class MainMenuFXMLController implements Initializable
     private void methods() throws IOException {
         this.mediaPlayer.stop();
         this.mediaPlayer.dispose();
-        Pane pane = FXMLLoader.load(getClass().getResource("/Flat/Frame.fxml"));
+        Pane pane = FXMLLoader.load(getClass().getResource("/prologue/Bar.fxml"));
         this.an.getChildren().setAll(pane);
         
         

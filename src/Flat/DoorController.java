@@ -61,7 +61,7 @@ public class DoorController implements Initializable {
         this.handleButton.setGraphic(imageView);
         
         try {
-            this.audioPlayer = new AudioPlayer("door_opening");
+            this.audioPlayer = new AudioPlayer("11");
             
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
             Logger.getLogger(DoorController.class.getName()).log(Level.SEVERE, null, ex);

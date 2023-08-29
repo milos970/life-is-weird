@@ -87,11 +87,11 @@ public class EndController implements Initializable {
 
          
          new Timeline(new KeyFrame(
-        Duration.millis(152000),
+        Duration.millis(25000),
         ae -> {
             
                   try {
-                      this.au = new AudioPlayer("94");
+                      this.au = new AudioPlayer("8");
                       this.au.play();
                       
                 
@@ -105,36 +105,11 @@ public class EndController implements Initializable {
             
     } ))
         .play();
+
+
          
          new Timeline(new KeyFrame(
-        Duration.millis(151000),
-        ae -> {
-            
-                this.end.setText("Koniec");  
-                  
-                  
-            
-            this.fadeIn(this.imageView,5000).play();
-            
-    } ))
-        .play();
-         
-         new Timeline(new KeyFrame(
-        Duration.millis(191000),
-        ae -> {
-            
-            
-                  this.end.setOpacity(0);
-                  this.fadeOut(this.end, 5000).play();
-                  this.end.setVisible(true);
-                  
-            
-            
-    } ))
-        .play();
-         
-         new Timeline(new KeyFrame(
-        Duration.millis(310000),
+        Duration.millis(50000),
         ae -> {
             
                   System.exit(0);
