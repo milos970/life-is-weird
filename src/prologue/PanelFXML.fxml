@@ -16,7 +16,7 @@
             <Image url="@../../images/uvod1.PNG" />
          </image>
       </ImageView>
-      <TextArea fx:id="textArea" editable="false" layoutY="194.0" prefHeight="200.0" prefWidth="1200.0" stylesheets="@../packag/textAreaStyle.css" />
+      <TextArea fx:id="textArea" editable="false" layoutY="194.0" prefHeight="200.0" prefWidth="1200.0" stylesheets="@../main/textAreaStyle.css" />
       <ButtonBar fx:id="buttonBar" layoutX="99.0" layoutY="442.0" prefHeight="183.0" prefWidth="1046.0">
          <buttons>
             <Button fx:id="buttonA" mnemonicParsing="false" onAction="#chooseDialogA" prefHeight="163.0" prefWidth="684.0" stylesheets="@buttonsStyle.css" wrapText="true" />

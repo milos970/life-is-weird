@@ -31,7 +31,7 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-import packag.SongPlayer;
+import main.SongPlayer;
 
 /**
  * FXML Controller class

@@ -5,7 +5,7 @@
  */
 package login;
 
-import Timer.Timer;
+import timer.Timer;
 import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URI;
@@ -31,8 +31,8 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-import packag.Manager;
-import packag.SongPlayer;
+import main.Manager;
+import main.SongPlayer;
 
 /**
  * FXML Controller class
@@ -213,7 +213,7 @@ this.leftButton.setEffect(new DropShadow());
     private void launchPexeso() {
         try {
           
-            this.nextPane("/Game/pexeso/Pexeso");
+            this.nextPane("/games/pexeso/Pexeso");
             this.disableAll();
             
         } catch (IOException ex) {
@@ -225,7 +225,7 @@ this.leftButton.setEffect(new DropShadow());
     private void launchSokoban() {
         
         try {
-            this.nextPane("/Game/sokoban/Plocha");
+            this.nextPane("/games/sokoban/Plocha");
             this.centerButton.setDisable(true);
             this.rightButton.setDisable(true);
         } catch (IOException ex) {
@@ -235,7 +235,7 @@ this.leftButton.setEffect(new DropShadow());
     
     public void nextSokoban() throws IOException {
         
-        this.nextPane("/Game/sokoban/Plocha");
+        this.nextPane("/games/sokoban/Plocha");
     }
     
     
@@ -244,7 +244,7 @@ this.leftButton.setEffect(new DropShadow());
     @FXML
     private void launchQuiz() {
         try {
-            this.nextPane("/Game/quiz/Quiz");
+            this.nextPane("/games/quiz/Quiz");
             this.rightButton.setDisable(true);
         } catch (IOException ex) {
             Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);
@@ -306,7 +306,7 @@ this.leftButton.setEffect(new DropShadow());
         Duration.millis(5000),
         ae -> {
             try {
-            this.nextAnchor("/end/Frame");
+            this.nextAnchor("/ending/Frame");
         } catch (IOException ex) {
             Logger.getLogger(FrameController.class.getName()).log(Level.SEVERE, null, ex);
         }   catch (UnsupportedAudioFileException ex) {

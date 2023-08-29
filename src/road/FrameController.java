@@ -5,8 +5,8 @@
  */
 package road;
 
-import Flat.DoorController;
-import Flat.Video;
+import flat.DoorController;
+import flat.Video;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -29,8 +29,8 @@ import javafx.scene.media.MediaView;
 import javafx.util.Duration;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-import packag.AudioPlayer;
-import packag.SongPlayer;
+import main.AudioPlayer;
+import main.SongPlayer;
 
 /**
  * FXML Controller class
@@ -211,7 +211,7 @@ public class FrameController implements Initializable {
             try {
                 this.videoOrder(1);
             } catch (IOException ex) {
-                Logger.getLogger(Flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
             }
             
     } ))
@@ -226,7 +226,7 @@ public class FrameController implements Initializable {
             try {
                 this.videoOrder(2);
             } catch (IOException ex) {
-                Logger.getLogger(Flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
             }
             
     } ))
@@ -271,7 +271,7 @@ public class FrameController implements Initializable {
                 ap = new AudioPlayer("10");
                         ap.play();
             } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-                Logger.getLogger(Flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(flat.FrameController.class.getName()).log(Level.SEVERE, null, ex);
             }
 
             
@@ -289,7 +289,7 @@ public class FrameController implements Initializable {
                 
                 break;
             case 2:
-                Pane pane = FXMLLoader.load(getClass().getResource("/packag/MonitorFXML.fxml"));
+                Pane pane = FXMLLoader.load(getClass().getResource("/main/MonitorFXML.fxml"));
         this.anchorPane.getChildren().setAll(pane);
                 break;
         }
