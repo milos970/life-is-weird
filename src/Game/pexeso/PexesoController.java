@@ -136,16 +136,16 @@ public class PexesoController extends Application implements Initializable  {
         this.cards.add(new Card("swift", "swift"));
         this.cards.add(new Card("cpp", "cpp"));
         this.cards.add(new Card("cpp", "cpp"));
-        this.cards.add(new Card("html", "html"));
-        this.cards.add(new Card("html", "html"));
-        this.cards.add(new Card(".net", ".net"));
-        this.cards.add(new Card(".net", ".net"));
+        this.cards.add(new Card("r", "r"));
+        this.cards.add(new Card("r", "r"));
+        this.cards.add(new Card("kotlin", "kotlin"));
+        this.cards.add(new Card("kotlin", "kotlin"));
         this.cards.add(new Card("js", "js"));
         this.cards.add(new Card("js", "js"));
         this.cards.add(new Card("python", "python"));
         this.cards.add(new Card("python", "python"));
-        this.cards.add(new Card("ms", "ms"));
-        this.cards.add(new Card("ms", "ms"));
+        this.cards.add(new Card("php", "php"));
+        this.cards.add(new Card("php", "php"));
     }
     
     private void setAction() {
