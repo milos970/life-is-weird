@@ -32,6 +32,6 @@
          </font>
       </Text>
       <Button fx:id="drinkButton" layoutX="478.0" layoutY="412.0" mnemonicParsing="false" onAction="#nextPane" prefHeight="54.0" prefWidth="508.0" stylesheets="@buttonsStyle.css" />
-      <TextArea fx:id="textArea" editable="false" layoutX="144.0" layoutY="188.0" prefHeight="200.0" prefWidth="842.0" stylesheets="@../packag/textAreaStyle.css" />
+      <TextArea fx:id="textArea" editable="false" layoutX="144.0" layoutY="188.0" prefHeight="200.0" prefWidth="842.0" stylesheets="@../main/textAreaStyle.css" />
    </children>
 </AnchorPane>
