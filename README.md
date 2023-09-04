@@ -1,11 +1,16 @@
-<h1>Life Is Strange</h1>
+<h1>Life Is Weird</h1>
 <h2>Popis</h2>
-<p>Vlatný projekt pre blízku osobu, ktorý čerpal inšpiráciu z AAA hier Firewatch (úvodom a hudbou) a Life Is Strange. Z posledného menovaného som si vypožičal titul ako odzrkadlenie mojej vtedajšej skúsenosťi s láskou. Z toho dôvodu bol projekt pozmenení vo viacerých jeho častiach</p>
+<p>Osobný projekt pre blízku osobu uchopený ako hra v hre s prvkom búrania štvrtej steny. Z dôvodu zachovania diskrétnosti bolo niekoľko jeho častí pozmenených a odstranených.</p>
 <ul>
   <li>Využitie video a audio súboru</li>
   <li>Využitie vlákien</li>
 </ul>
-<h2>Jazyky & frameworky & nástroje</h2>
+<h2>Požiadavky na spustene</h2>
+<ul>
+  <li>JRE</li>
+</ul>
+
+<h2>Jazyky & Frameworky & Nástroje</h2>
 <ul>
   <li>Java</li>
   <li>JavaFX</li>
