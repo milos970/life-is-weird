@@ -4,7 +4,7 @@
 
 <h2>Požiadavky na spustenie</h2>
 <ul>
-  <li>JDK 8.0.321</li>
+  <li>JRE 8.0.321</li>
 </ul>
 
 <h2>Jazyky & Frameworky & Nástroje</h2>
