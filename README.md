@@ -4,7 +4,7 @@
 
 <h2>Requirements</h2>
 <ul>
-  <li>JRE 8.0.321</li>
+  <li>JDK 8.0.321</li>
 </ul>
 
 <h2>Languages & Frameworks & Tools</h2>
