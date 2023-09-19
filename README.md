@@ -15,3 +15,11 @@
   <li>Scene Builder</li>
   <li>IntelliJ</li>
 </ul>
+
+<h2>Preview</h2>
+
+![me](https://github.com/milos970/assets/blob/291e7238b99d40e9165623e5372d6108b542404e/images/ipad.gif)
+
+![me](https://github.com/milos970/assets/blob/291e7238b99d40e9165623e5372d6108b542404e/images/pexeso.gif)
+
+![me](https://github.com/milos970/assets/blob/0aa9eba791b1932400ad39537a0723724c0aad30/images/sokoban.gif)
