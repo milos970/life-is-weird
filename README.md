@@ -5,21 +5,36 @@
 
 ## 🧰 Technologies
 
+<table><tr><td valign="top" width="33%">
 
 
-### 🔹 Languages & Frameworks  
-<ul style="list-style-type: disc; display: inline-block;">
+
+### Languages & Frameworks  
+<div align="left">
+  <ul style="list-style-type: disc; display: inline-block;">
     <li>Java 8</li>
     <li>JavaFX</li>
     <li>CSS</li>
   </ul>
+</div>
 
 
-  ### 🔹 Development & Testing  
-<ul style="list-style-type: disc; display: inline-block;">
+</td><td valign="top" width="33%">
+
+
+
+###  Development & Testing   
+<div align="left">
+  <ul style="list-style-type: disc; display: inline-block;">
     <li>Scene Builder</li>
     <li>IntelliJ</li>
   </ul>
+</div>
+
+
+
+
+
 
 
 
