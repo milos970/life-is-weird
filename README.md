@@ -75,17 +75,8 @@ The game is built around JavaFX scenes and controllers.
 
 ### Main Menu
 
-![Main Menu](docs/screenshots/main-menu.png)
+![Main Menu](https://raw.githubusercontent.com/milos970/portfolio-2/main/assets/images/projects/liw/1.png)
 
-### Gameplay
-
-![Gameplay](docs/screenshots/gameplay.png)
-
-### Dialogue
-
-![Dialogue](docs/screenshots/dialogue.png)
-
-> Screenshots have been modified where necessary to protect personal information.
 
 ---
 
