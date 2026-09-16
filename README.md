@@ -74,21 +74,14 @@ The game is built around JavaFX scenes and controllers.
 ## 📸 Screenshots
 
 
-![Main Menu](docs/screenshots/1.png)
-
-
-![Gameplay](docs/screenshots/2.png)
-
-
-![Dialogue](docs/screenshots/3.png)
-
-![Main Menu](docs/screenshots/4.png)
-
-
-![Gameplay](docs/screenshots/5.png)
-
-
-![Dialogue](docs/screenshots/6.png)
+<p align="center">
+  <img src="docs/screenshots/1.png" width="30%">
+  <img src="docs/screenshots/2.png" width="30%">
+  <img src="docs/screenshots/3.png" width="30%">
+<img src="docs/screenshots/4.png" width="30%">
+  <img src="docs/screenshots/5.png" width="30%">
+  <img src="docs/screenshots/6.png" width="30%">
+</p>
 
 
 ---
