@@ -32,15 +32,7 @@ Due to privacy reasons, some parts of the original project have been **modified,
 
 ---
 
-## 🛠️ Technologies
 
-* **Java 8** — programming language
-* **JavaFX** — graphical user interface and game components
-* **CSS** — UI styling
-* **Scene Builder** — interface design
-* **IntelliJ IDEA** — development environment
-
----
 
 ## 🏗️ Structure
 
@@ -112,14 +104,7 @@ Make sure JavaFX is correctly configured for the project.
 
 Run the main application class from IntelliJ IDEA.
 
----
 
-## 🔮 Future Improvements
-
-* [ ] Improve dialogue system
-* [ ] Add more interactive events
-* [ ] Improve animations and transitions
-* [ ] Refine UI/UX
 
 ---
 
